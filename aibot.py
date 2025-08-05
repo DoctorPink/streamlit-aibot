@@ -68,11 +68,10 @@ def response_generator():
         time.sleep(0.05)
  
 # THE INITIAL CODE
-with c = st.container()
+with st.container():
     image = "https://upload.wikimedia.org/wikipedia/commons/c/c8/Question_mark_1.svg"
     st.image(image,  width=50)      #caption="Ask Me!"          
     st.title("Ask a Question!")                                              # Changed the title of the page 
- 
 
 # Initialize chat history
 if "messages" not in st.session_state:
