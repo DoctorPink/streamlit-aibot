@@ -72,7 +72,7 @@ st.title("Ask a Question!")                                              # Chang
 st.header("Please ask a question. Do not just type 'Nothing'. ")         # add more content and image
  
 #st.image("https://github.com/DoctorPink/streamlit-aibot/blob/main/sunset.png", caption="Sunrise by the mountains")              # from https://unsplash.com/photos/I2UR7wEftf4
-st.image("https://upload.wikimedia.org/wikipedia/commons/c/c8/Question_mark_1.svg", caption="question")                
+st.image("https://upload.wikimedia.org/wikipedia/commons/c/c8/Question_mark_1.svg", caption="question", caption ="From Wikimedia", width="50")                
 
 # Initialize chat history
 if "messages" not in st.session_state:
