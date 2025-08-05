@@ -68,9 +68,10 @@ def response_generator():
         time.sleep(0.05)
  
 # THE INITIAL CODE
-st.image("https://upload.wikimedia.org/wikipedia/commons/c/c8/Question_mark_1.svg", caption="Ask Me!", width=50)                
-st.title("Ask a Question!")                                              # Changed the title of the page
-st.header("Please ask a question. Do not just type 'Nothing'. ")         # add more content and image
+with c = st.container()
+    image = "https://upload.wikimedia.org/wikipedia/commons/c/c8/Question_mark_1.svg"
+    st.image(image,  width=50)      #caption="Ask Me!"          
+    st.title("Ask a Question!")                                              # Changed the title of the page 
  
 
 # Initialize chat history
