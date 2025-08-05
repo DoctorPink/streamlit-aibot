@@ -68,8 +68,10 @@ def response_generator():
         time.sleep(0.05)
  
 # THE INITIAL CODE
-st.title("Ask a Question!")                                # Changed the title of the page
-write("Please ask a question. Do not just type 'Nothing'. ")
+st.title("Ask a Question!")                                              # Changed the title of the page
+st.header("Please ask a question. Do not just type 'Nothing'. ")  
+ 
+st.image("https://unsplash.com/photos/I2UR7wEftf4", caption="Sunrise by the mountains")   # sunrise.jpg
 
 # Initialize chat history
 if "messages" not in st.session_state:
