@@ -71,7 +71,7 @@ def response_generator():
 st.title("Ask a Question!")                                              # Changed the title of the page
 st.header("Please ask a question. Do not just type 'Nothing'. ")         # add more content and image
  
-st.image("sunrise.png", caption="Sunrise by the mountains")              # from https://unsplash.com/photos/I2UR7wEftf4
+st.image("https://github.com/DoctorPink/streamlit-aibot/blob/main/sunset.png", caption="Sunrise by the mountains")              # from https://unsplash.com/photos/I2UR7wEftf4
 
 # Initialize chat history
 if "messages" not in st.session_state:
