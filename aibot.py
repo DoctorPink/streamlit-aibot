@@ -64,7 +64,7 @@ def response_generator():
         time.sleep(0.05)
  
 # THE INITIAL CODE
-st.title("AI chat")
+st.title("This is the all knowing AI chat bot demo!")
 
 # Initialize chat history
 if "messages" not in st.session_state:
