@@ -69,7 +69,9 @@ def response_generator():
  
 # THE INITIAL CODE
 with st.container():
+    st.markdown("<div style='text-align: center;'>", unsafe_allow_html=True) 
     image = "https://upload.wikimedia.org/wikipedia/commons/c/c8/Question_mark_1.svg"
+    st.markdown("</div>", unsafe_allow_html=True)
     st.image(image,  width=50)      #caption="Ask Me!"          
     st.title("Ask a Question!")                                              # Changed the title of the page 
 
