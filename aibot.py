@@ -24,6 +24,10 @@ def ai_ask(prompt, data=None, temperature=0.5, max_tokens=250, model="mistral-sm
 
     # Construct the message incorporating both prompt and data if provided
     message = prompt
+    if data == "Nothing":
+        data_str = json.dumps(data, indent=2)
+        message += f"\n\nAsk me a question:\n{data_str}"
+
     if data is not None:
         data_str = json.dumps(data, indent=2)
         message += f"\n\nData to analyze:\n{data_str}"
@@ -64,7 +68,7 @@ def response_generator():
         time.sleep(0.05)
  
 # THE INITIAL CODE
-st.title("This is the all knowing AI chat bot demo!")
+st.title("Ask a Question!")
 
 # Initialize chat history
 if "messages" not in st.session_state:
